@@ -1,9 +1,9 @@
 // prenode.js
 // stub to include printf and scanf in javascript programs
 
-var scanf_stub = require('../scanf-obi').scanf,
-    printf_stub = require('../scanf-obi').sprintf,
-    fgets_stub = require('../scanf-obi').fgets
+var scanf_stub = require('./index.js').scanf,
+    printf_stub = require('./index.js').sprintf,
+    fgets_stub = require('./index.js').fgets
 
 function scanf(format) {
     // scanf_stub returns an expression with variables passed and values read from stdin
@@ -25,3 +25,5 @@ function fgets(args){
 
 // end of stub
 // append your script here
+
+printf("%d\n", 1000);
